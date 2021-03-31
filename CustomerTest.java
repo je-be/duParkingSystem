@@ -35,11 +35,11 @@ public class CustomerTest {
     */
     @Test
     public static void main( String[] args ) {
-      var customerOne = new Customer( "1001", "Mr", "President", "800-NO-COVID", "WhiteHouse" );
+      var customerOne = new Customer( "1", "Mr", "Somebody", "555-555-1212", "Somewhere" );
       var customerToPrint = customerOne.getCustomer();    
       System.out.println( customerToPrint );
       ArrayList< String > customerOneUpdate = new ArrayList<String>(Arrays.asList(
-              "1001", "Mr", "Nobody", "800-YOU-LOSE", "Trump Towers"));
+              "2", "Mr", "Nobody", "800-456-7890", "Nowhere"));
       customerOne.setCustomer( customerOneUpdate );
       customerToPrint = customerOne.getCustomer();
       System.out.println( customerToPrint );
